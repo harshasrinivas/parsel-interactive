@@ -1,32 +1,20 @@
-import parsel
-from selenium import webdriver
+import webbrowser
+import os
 
 class interactive(object):
 	def __init__(self):
-		self.elements = []
+		pass
 
-	def open(self, url):
-		self.driver = webdriver.Chrome('./chromedriver')
-		self.driver.get(url)
+	def show(self, selector_list, htmlsample):
+	    x = selector_list.extract()
+	    y = ['<div style="background-color: yellow; font-weight:bold;">' + i + '</div>' for i in x]
 
-	def check_css(self, css_selector):
-		self.elements = self.driver.find_elements_by_css_selector(css_selector)
-		for elem in self.elements:
-			self.driver.execute_script("arguments[0].setAttribute('style','background-color:yellow;')", elem)
+	    for i, j in zip(x, y):
+	        htmlsample = htmlsample.replace(i, j)
 
-	def check_xpath(self, xpath):
-		self.elements = self.driver.find_elements_by_xpath(xpath)
-		for elem in self.elements:
-			self.driver.execute_script("arguments[0].setAttribute('style','background-color:yellow;')", elem)
-
-	def clear(self):
-		for elem in self.elements:
-			self.driver.execute_script("arguments[0].setAttribute('style','')", elem)
-
-	def close(self):
-		self.driver.quit()
-
-
-
-
-			
+	    newpath = os.path.realpath('./modified.html')
+	    
+	    with open(newpath, 'w') as f:
+	        f.write(htmlsample)
+	    
+	    webbrowser.open('file://' + newpath)
