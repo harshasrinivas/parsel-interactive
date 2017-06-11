@@ -19,9 +19,9 @@ selector_list = doc.css('.navigation li')
 ```
 
 ```python
-from parsel_basic import basic
+from parsel_interactive import interactive
 
-obj = basic()
+obj = interactive()
 
 # Highlight selectors and view HTML in browser
 obj.show(selector_list, htmlsample)
@@ -31,7 +31,7 @@ obj.show(modified_selector_list, htmlsample)
 
 ```
 
-![Parsel-interactive](https://github.com/harshasrinivas/parsel-interactive/blob/master/images/1.gif)
+![Parsel-interactive](https://github.com/harshasrinivas/parsel-interactive/blob/master/images/1.png)
 
 
 ### Issues with Parsel-Interactive
@@ -57,7 +57,7 @@ Possible solutions I have been experimenting with over the past few days:
 This is the desired way for this project to work. This method makes use of Selenium to show the desired working.
 
 ```python
-from parsel_interactive import interactive
+from selenium_interactive import interactive
 
 obj = interactive()
 
@@ -76,5 +76,5 @@ obj.clear()
 
 ```
 
-![Selenium-interactive](https://github.com/harshasrinivas/parsel-interactive/blob/master/images/2.gif)
+![Selenium-interactive](https://github.com/harshasrinivas/parsel-interactive/blob/master/images/2.png)
 
