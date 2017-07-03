@@ -1,6 +1,21 @@
+## PARSEL_SelectorGadget
+
+> Custom Widget - SelectorGadget.ipynb
+
+To use this IPython notebook, find the line
+
+`s.setAttribute('src','http://localhost:8888/tree/selectorgadget/public/js/selectorgadget.js');`
+
+Replace the line with the corresponding local location of `https://github.com/harshasrinivas/parsel-interactive/tree/master/selectorgadget/public/js/selectorgadget.js`
+
+Run the IPython code and click the **Highlight** button, you can see SelectorGadget loaded in the webpage.
+
+
 
 
 ## PARSEL_INTERACTIVE
+
+> Parsel - IPython Widget.ipynb
 
 Parsel-Interactive is an IPython widget designed to enable usage of XPath/CSS selectors in an interactive manner.
 
