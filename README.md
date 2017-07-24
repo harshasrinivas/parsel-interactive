@@ -1,27 +1,14 @@
-## Custom Widget - SelectorGadget.ipynb
+#### Data exchange:
 
-> Input - Iframe with loaded SelectorGadget
-> 
-> Output - Selector
-> 
-> NBViewer Demo - [Here](http://nbviewer.jupyter.org/github/harshasrinivas/parsel-interactive/blob/master/Custom%20Widget%20-%20SelectorGadget.ipynb)
- 
-
-To use this IPython notebook, find the line
-
-`s.setAttribute('src','http://localhost:8888/tree/parttwo/selectorgadget/public/js/selectorgadget.js');`
-
-Replace the line with the corresponding local location of [selectorgadget.js](https://github.com/harshasrinivas/parsel-interactive/tree/master/selectorgadget/public/js/selectorgadget.js)
+- [x] IPython code to widget
+- [x] IPython widget to code
+- [x] IPywidget to Javascript - With and Without COMMS API
+- [ ] Javascript to IPywidget
 
 
+Demo of [Using-COMMS-API.ipynb](http://nbviewer.jupyter.org/github/harshasrinivas/parsel-interactive/blob/master/Using-COMMS-API.ipynb)
 
-## Parsel - IPython Widget.ipynb
-
-> Input - Selector
-> 
-> Output - Highlighted text
-> 
-> Demo - [Here](http://nbviewer.jupyter.org/github/harshasrinivas/parsel-interactive/blob/master/Parsel%20-%20IPython%20Widget.ipynb)
+Demo of [Without-COMMS-API.ipynb](http://nbviewer.jupyter.org/github/harshasrinivas/parsel-interactive/blob/master/Without-COMMS-API.ipynb)
 
 
-![Parsel-interactive](https://github.com/harshasrinivas/parsel-interactive/blob/master/images/widget.png)
+Read more about it [here in my blog](#)
