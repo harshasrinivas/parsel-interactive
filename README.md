@@ -11,4 +11,4 @@ Demo of [Using-COMMS-API.ipynb](http://nbviewer.jupyter.org/github/harshasriniva
 Demo of [Without-COMMS-API.ipynb](http://nbviewer.jupyter.org/github/harshasrinivas/parsel-interactive/blob/master/Without-COMMS-API.ipynb)
 
 
-Read more about it [here in my blog](#)
+Read more about it [here in my blog](http://harshasrinivas.me/blog//2017/07/24/gsoc-week-nine/)
